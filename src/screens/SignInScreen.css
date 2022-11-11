@@ -1,0 +1,18 @@
+
+.main-div{
+   height: 100vh;
+   width: 100vw;
+   background-color: #F8EADD;
+
+}
+
+.form-container{
+    width: 28.25vw;
+    height: 25vw;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    border-radius: 71px;
+    transform: translate(-50%,-50%);
+    background-color: #EBD2BB;
+}
