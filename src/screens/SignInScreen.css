@@ -3,16 +3,92 @@
    height: 100vh;
    width: 100vw;
    background-color: #F8EADD;
+   
 
 }
 
+
+.man-above-form {
+    background-color: transparent;
+    width: 88px;
+    height: 106px;
+    margin-top: -99px;
+    margin-left: 40%;
+    
+}
 .form-container{
+    align-items: center;
     width: 28.25vw;
     height: 25vw;
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 50%;
     border-radius: 71px;
     transform: translate(-50%,-50%);
     background-color: #EBD2BB;
+}
+
+.text-welcome{
+    background-color: transparent;
+}
+.text{
+    background-color: transparent;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.form{
+    
+    
+    margin: 5vh;
+    background-color:#EBD2BB ;
+   
+    width: 80%;
+
+    
+    justify-content: center;
+   
+}
+.label{
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+.input-field{
+    border-radius: 71px;
+    width: 100%;
+    
+    padding: 12px 20px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    display: flex;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.log-button{
+    margin-top: 25px;
+    margin-left: 7%;   
+    text-align: center;
+    width: 80%;
+    padding: 9px;
+    border-radius: 71px;
+    background-color: #5E5BFF;
+    align-self: center;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.signup-text{
+    background-color: transparent;
+    text-align: center;
+}
+.underlying-text{
+    background-color: transparent;
+    text-align: center;
+}
+.click-here{
+    background-color: transparent;
+    color: blue;
+    text-decoration: dashed;
 }
