@@ -1,0 +1,12 @@
+.signup-button{
+    margin-top: 25px;
+    margin-left: 7%;   
+    text-align: center;
+    width: 80%;
+    padding: 9px;
+    border-radius: 71px;
+    background-color: #5E5BFF;
+    align-self: center;
+    color: #ccc;
+    font-weight: bold;
+}
