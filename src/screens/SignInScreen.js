@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 
@@ -14,11 +14,13 @@ import axios from "axios";
 
 
 
-function SignInScreen(){
+function SignInScreen({setLoginUserData}){
       
    
   
 
+    //useStates 
+    const navigate= useNavigate();
 
     const [userData , setUserData] = useState({
         email:"",
@@ -38,13 +40,19 @@ function SignInScreen(){
        )
    }
 
-
-
+ 
+var isSubmit="";
    //api call 
    const login =()=>{
     const {email , password} = userData;
-    axios.post('http://localhost:9002/login')
-    .then(res=>console.log(res))
+    axios.post('http://localhost:9002/login',userData)
+    .then(res=>{
+        isSubmit=res.data.message;
+        alert(isSubmit) 
+        setLoginUserData(res.data.user)
+        navigate("/")
+    })
+
    }
 
 
@@ -68,12 +76,13 @@ function SignInScreen(){
              </label>
               <div className='log-button' onClick={login}> SIGN IN </div>
             </div>
-
+              
             <div className="signup-text">
                 or don't have a account ,  
                     
             </div>
             <div className="underlying-text"><Link  to="/signUP" className="click-here">click here</Link> to SIGN UP</div>
+            
              </div>
 
         </div>
